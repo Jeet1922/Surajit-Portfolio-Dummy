@@ -1,30 +1,34 @@
-# Surajit portfolio design
+# Surajit Maji — portfolio
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A statically exported Next.js portfolio with a time-travel career view and a plain, no-animation alternative. It uses TypeScript and Tailwind CSS and has no backend, database, CMS, analytics, or third-party embeds.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/surajitmaji880-5075s-projects/v0-surajit-portfolio-design)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/eRVL8hn3bqi)
+## Update the content
 
-## Overview
+Edit [`content/profile.ts`](./content/profile.ts) to update the typed profile, experience, projects, skills, education, certifications, contact details, and public site URL. Both views read from this file.
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+Replace [`public/resume.pdf`](./public/resume.pdf) with the final resume PDF before publishing.
 
-## Deployment
+## Run locally
 
-Your project is live at:
+```bash
+pnpm install
+pnpm dev
+```
 
-**[https://vercel.com/surajitmaji880-5075s-projects/v0-surajit-portfolio-design](https://vercel.com/surajitmaji880-5075s-projects/v0-surajit-portfolio-design)**
+Open the local address printed by Next.js. To create and check the production export:
 
-## Build your app
+```bash
+pnpm build
+```
 
-Continue building your app on:
+The static site is written to `out/`.
 
-**[https://v0.dev/chat/projects/eRVL8hn3bqi](https://v0.dev/chat/projects/eRVL8hn3bqi)**
+## Deploy on Vercel
 
-## How It Works
+1. Push this repository to your GitHub account.
+2. Sign in to Vercel with GitHub and choose **Add New → Project**.
+3. Import `Jeet1922/Surajit-Portfolio-Dummy`.
+4. Set the project name to `surajit-maji` if Vercel offers it.
+5. Choose **Deploy**. Vercel detects Next.js and the static export; no environment variables or custom build settings are needed.
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+If the `surajit-maji` project name is unavailable, stop before deployment and choose another project name. If the chosen Vercel address differs, update the single `siteUrl` value in `content/profile.ts` before deploying.
