@@ -23,12 +23,12 @@ pnpm build
 
 The static site is written to `out/`.
 
-## Deploy on Vercel
+## Deploy on GitHub Pages
 
-1. Push this repository to your GitHub account.
-2. Sign in to Vercel with GitHub and choose **Add New → Project**.
-3. Import `Jeet1922/Surajit-Portfolio-Dummy`.
-4. Set the project name to `surajit-maji` if Vercel offers it.
-5. Choose **Deploy**. Vercel detects Next.js and the static export; no environment variables or custom build settings are needed.
+The `main` branch is deployed to GitHub Pages by [`.github/workflows/deploy-pages.yml`](./.github/workflows/deploy-pages.yml). The workflow installs dependencies, builds the static export, and publishes `out/`.
 
-If the `surajit-maji` project name is unavailable, stop before deployment and choose another project name. If the chosen Vercel address differs, update the single `siteUrl` value in `content/profile.ts` before deploying.
+The first time, open the repository's **Settings → Pages** and ensure **Build and deployment → Source** is set to **GitHub Actions**. Each push to `main` then publishes the site at:
+
+<https://jeet1922.github.io/Surajit-Portfolio-Dummy/>
+
+The single public URL is in [`content/site-config.mjs`](./content/site-config.mjs). The GitHub Pages base path, resume URL, canonical URL, share-image URL, sitemap, and robots sitemap reference derive from it.

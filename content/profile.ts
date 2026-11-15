@@ -1,5 +1,9 @@
+import { basePath, siteOrigin, siteUrl } from "@/content/site-config.mjs"
+
+export { basePath, siteOrigin, siteUrl }
+
 export const profile = {
-  siteUrl: "https://surajit-maji.vercel.app",
+  siteUrl,
   seoDescription:
     "I build production AI and data systems, including an agentic Text-to-SQL service for 10,000+ users. AI, data, and software engineer with 12 years of experience.",
   shareImageDescription: "I build production AI systems and the data platforms behind them.",
@@ -12,7 +16,7 @@ export const profile = {
   links: {
     github: "https://github.com/Jeet1922",
     linkedin: "https://www.linkedin.com/in/surajitmaji19",
-    resume: "/resume.pdf",
+    resume: `${basePath}/resume.pdf`,
   },
   facts: [
     { value: "10,000+", label: "users served by my agentic Text-to-SQL system" },

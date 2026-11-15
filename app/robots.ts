@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next"
-import { profile } from "@/content/profile"
+import { profile, siteUrl } from "@/content/profile"
 
 export const dynamic = "force-static"
 
@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: `${profile.siteUrl}/sitemap.xml`,
+    sitemap: new URL("sitemap.xml", siteUrl).toString(),
   }
 }

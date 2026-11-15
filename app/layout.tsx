@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { profile } from '@/content/profile'
+import { basePath, profile, siteOrigin } from '@/content/profile'
 import './globals.css'
 
-const shareImage = new URL('/share-card.png', profile.siteUrl)
+const shareImage = new URL(`${basePath}/share-card.png`, siteOrigin)
 const pageTitle = `${profile.name} — ${profile.title}`
 
 export const metadata: Metadata = {
