@@ -1,4 +1,4 @@
-export const siteUrl = "https://jeet1922.github.io/Surajit-Portfolio/"
+export const siteUrl = "https://jeet1922.github.io/Surajit-Portfolio-Dummy/"
 
 const parsedSiteUrl = new URL(siteUrl)
 
