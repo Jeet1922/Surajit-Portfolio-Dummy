@@ -1,6 +1,6 @@
 # Surajit Maji — portfolio
 
-A statically exported Next.js portfolio with a time-travel career view and a plain, no-animation alternative. It uses TypeScript and Tailwind CSS and has no backend, database, CMS, analytics, or third-party embeds.
+A statically exported Next.js portfolio with a chronological career timeline and a plain, no-animation alternative. It uses TypeScript and Tailwind CSS and has no backend, database, CMS, analytics, or third-party embeds.
 
 ## Update the content
 
@@ -27,8 +27,8 @@ The static site is written to `out/`.
 
 The `main` branch is deployed to GitHub Pages by [`.github/workflows/deploy-pages.yml`](./.github/workflows/deploy-pages.yml). The workflow installs dependencies, builds the static export, and publishes `out/`.
 
-The first time, open the repository's **Settings → Pages** and ensure **Build and deployment → Source** is set to **GitHub Actions**. Each push to `main` then publishes the site at:
+Rename the repository to `Surajit-Portfolio` in **Settings → General → Repository name**, then open **Settings → Pages** and ensure **Build and deployment → Source** is set to **GitHub Actions**. Each push to `main` then publishes the site at:
 
-<https://jeet1922.github.io/Surajit-Portfolio-Dummy/>
+<https://jeet1922.github.io/Surajit-Portfolio/>
 
 The single public URL is in [`content/site-config.mjs`](./content/site-config.mjs). The GitHub Pages base path, resume URL, canonical URL, share-image URL, sitemap, and robots sitemap reference derive from it.
