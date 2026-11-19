@@ -29,6 +29,6 @@ The `main` branch is deployed to GitHub Pages by [`.github/workflows/deploy-page
 
 Open **Settings → Pages** and ensure **Build and deployment → Source** is set to **GitHub Actions**. No repository rename is needed. Each push to `main` publishes the site at:
 
-<https://jeet1922.github.io/Surajit-Portfolio-Dummy/>
+<https://jeet1922.github.io/Surajit-Portfolio/>
 
 The single public URL is in [`content/site-config.mjs`](./content/site-config.mjs). The GitHub Pages base path, resume URL, canonical URL, share-image URL, sitemap, and robots sitemap reference derive from it.
